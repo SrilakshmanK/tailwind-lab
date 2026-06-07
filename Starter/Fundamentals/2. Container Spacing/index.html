@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,12 @@
     <style>
       body {
         padding: 5rem;
+        font-size: 2rem;
+        border: 2px solid #1c1c1c;
+        margin: 10px;
+      }
+      .ele {
+        display: inline;
       }
     </style>
   </head>
@@ -16,13 +22,106 @@
     <!-- Margin -->
     <!-- https://tailwindcss.com/docs/margin -->
 
+    <!-- <h2>1. Margin</h2>
+
+    <div class="m-10 bg-pink-100">Margin All Around</div>
+
+    <p class="ele">|</p>
+    <div class="ele mx-10 bg-red-100">Margin for X axis</div>
+    <p class="ele">|</p>
+    <br />
+
+    
+    <div class=" my-10 bg-teal-100">Margin for Y axis</div>
+   
+   
+
+    <div class="mt-15 bg-violet-100 ">Margin for Top</div>
+   
+
+    <div class=" mb-10 bg-gray-100">Margin for Bottom</div>
+  
+
+     <p class="ele">|</p>
+    <div class="ele ml-10">Margin for Left</div>
+    <br />
+
+    <div class="ele mr-10">Margin for Right</div>
+     <p class="ele">|</p>
+    <br /> -->
+
+    <h3>1. Margin</h3>
+    <br />
+
+    <div class="m-1 bg-pink-100">Margin All Around</div>
+
+    <div class="mx-4 bg-pink-200">Margin from X axis</div>
+
+    <div class="my-4 bg-pink-300">Margin from Y axis</div>
+
+    <div class="mt-6 bg-pink-400">Margin Top</div>
+
+    <div class="mr-10 bg-pink-500">Margin Right</div>
+
+    <div class="ml-10 bg-pink-700">Margin Left</div>
+
+    <div class="mb-8 bg-pink-600">Margin Bottom</div>
+    <br />
+    <hr />
+    <br />
+
     <!-- Arbitrary Spacing -->
+    <h3>2. Arbitary Spacing</h3>
+    <br />
+    <div class="bg-slate-300 m-[100px]">
+      Margin All Around using Arbitrary Spacing
+    </div>
+
+    <br />
+    <hr />
+    <br />
 
     <!-- Padding -->
     <!-- https://tailwindcss.com/docs/padding -->
 
+    <h3>3. Padding</h3>
+    <br />
+    <div class="w-[500px] p-4 bg-green-100">Padding All around</div>
+    <div class="w-[500px] px-5 bg-green-300">Padding for X axis</div>
+    <div class="w-[500px] py-5 bg-green-400">Padding for Y axis</div>
+    <div class="w-[500px] pt-5 bg-green-500">Padding Top</div>
+    <div class="w-[500px] pb-5 bg-green-600">Padding Bottom</div>
+    <div class="w-[500px] pl-5 bg-green-700">Padding Left</div>
+    <div class="w-[500px] pr-5 bg-green-800">Padding Right</div>
+
+    <br />
+    <hr />
+    <br />
+
     <!-- https://tailwindcss.com/docs/space -->
+
     <!-- Space Between X -->
+    <h3>Space Between X</h3>
+
+    <div class="flex space-x-4">
+      <div class="p-3 bg-teal-100">01</div>
+      <div class="p-3 bg-teal-200">02</div>
+      <div class="p-3 bg-teal-300">03</div>
+    </div>
+    <br />
+    <hr />
+    <br />
+
     <!-- Space Between Y -->
+    <h3>Space Between Y</h3>
+
+    <div class="flex flex-col space-y-2">
+      <div class="p-3 bg-teal-100">01</div>
+      <div class="p-3 bg-teal-200">02</div>
+      <div class="p-3 bg-teal-300">03</div>
+    </div>
+    <br />
+    <hr />
+    <br />
   </body>
 </html>
