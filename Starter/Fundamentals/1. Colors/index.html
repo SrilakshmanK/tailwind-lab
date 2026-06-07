@@ -1,26 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Colors</title>
     <style>
       body {
         padding: 5rem;
+        font-size: 2rem;
       }
     </style>
   </head>
   <body>
     <!-- 1. Colors With Different Shades -->
     <!-- https://tailwindcss.com/docs/customizing-colors  -->
+    <h1>1. Colors with different shades</h1>
+    <p class="text-teal-50">Color</p>
+    <p class="text-teal-100">Color</p>
+    <p class="text-teal-200">Color</p>
+    <p class="text-teal-300">Color</p>
+    <p class="text-teal-400">Color</p>
+    <p class="text-teal-500">Color</p>
+    <p class="text-teal-600">Color</p>
+    <p class="text-teal-700">Color</p>
+    <p class="text-teal-800">Color</p>
+    <p class="text-teal-900">Color</p>
+
+    <br />
+    <hr />
+    <br />
 
     <!-- 2. Background Colors -->
     <!-- https://tailwindcss.com/docs/background-color -->
 
-    <!-- Text Underline -->
+    <h1>2.Background Colors</h1>
+    <p class="bg-teal-400 text-white">Background</p>
+    <p class="bg-red-500 text-white">Background</p>
+    <p class="bg-violet-600 text-white">Background</p>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- 3. Text Underline -->
+    <!-- https://tailwindcss.com/docs/text-decoration-line -->
+    <h1>3. Text Decoration</h1>
+    <p class="line-through">Text Decoration</p>
+    <p class="underline">Text Decoration</p>
+    <p class="overline">Text Decoration</p>
+    <p class="no-underline">Text Decoration</p>
+
+    <p class="underline decoration-purple-400 text-purple-600">
+      Text Decoration
+    </p>
+    <br />
+    <hr />
+    <br />
+
+    <!-- 4. Accent Color -->
     <!-- https://tailwindcss.com/docs/accent-color -->
+    <h1>4. Accent Color</h1>
+    <input type="checkbox" class="accent-green-500" /><br />
+    <input type="checkbox" class="accent-transparent" /><br />
+
+    <input type="radio" class="accent-red-500" /><br />
+
+    <input type="range" class="accent-purple-500" /><br />
+
+    <progress class="accent-pink-300" value="50" max="100"></progress><br />
+    <br />
+    <hr />
+    <br />
+
+    <h1>5. Practice</h1>
+    <div class="bg-white">
+      <h1 class="text-3xl text-blue-600">Daily Discipline Tracker</h1>
+
+      <p class="text-gray-600">Track your daily goals</p>
+
+      <br />
+
+      <input type="checkbox" class="accent-green-500" checked />
+      <span class="text-green-600">Wake Up Early</span>
+
+      <br />
+
+      <input type="checkbox" class="accent-green-500" checked />
+      <span class="text-green-600">Study DSA</span>
+
+      <br />
+
+      <input type="checkbox" class="accent-red-500" />
+      <span class="text-red-600">Workout</span>
+
+      <br />
+
+      <input type="checkbox" class="accent-red-500" />
+      <span class="text-red-600">Forex Journal</span>
+
+      <br /><br />
+
+      <p class="text-purple-600">Progress Slider</p>
+
+      <input type="range" class="accent-purple-500" value="50" />
+
+      <br /><br />
+
+      <progress value="50" max="100" class="accent-green-500"></progress>
+
+      <br /><br />
+
+      <a href="#" class="text-blue-600 underline decoration-pink-500">
+        View Goals
+      </a>
+
+      <br /><br />
+
+      <p class="text-orange-500">Current Streak: 3 Days 🔥</p>
+    </div>
+    <br />
+    <hr />
+    <br />
   </body>
 </html>
