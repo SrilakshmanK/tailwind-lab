@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Transform & Transition</title>
+  </head>
+  <body class="p-10">
+    <!-- No Transition -->
+    <h1 class="mb-4 text-xl">Button with out transition</h1>
+
+    <button
+      class="mb-5 p-3 text-white bg-blue-500 hover:bg-blue-700 rounded-xl"
+    >
+      Tailwind
+    </button>
+    <br />
+    <hr />
+    <br />
+    <h1 class="mb-4 text-xl">Button with transition</h1>
+
+    <button
+      class="mb-5 p-3 px-5 text-white bg-blue-500 transition hover:bg-teal-700 rounded-xl duration-300 ease-in-out dealy-150 text-white"
+    >
+      Tailwind
+    </button>
+    <br />
+    <hr />
+    <br />
+    <h1 class="mb-4 text-xl">Button with transition & Transformation</h1>
+
+    <button
+      class="p-3 px-5 text-white bg-blue-500 transition hover:bg-teal-700 hover:-translate-y-1 hover:scale-110 rounded-xl duration-1000 ease-in-out dealy-150 text-white"
+    >
+      Tailwind
+    </button>
+
+    <!-- Transition -->
+    <!-- 1. https://tailwindcss.com/docs/transition-property -->
+    <!-- 2. https://tailwindcss.com/docs/transition-duration -->
+    <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
+    <!-- 4. https://tailwindcss.com/docs/transition-delay -->
+    <!-- 5. https://tailwindcss.com/docs/animation -->
+
+    <!-- Transition & Transform -->
+
+    <!-- Animation -->
+    <div class="flex justify-around align-center m-20">
+
+      <div
+        class="w-16 h-16 border-4 border-gray-300 border-t-blue-400 animate-spin rounded-full"
+      ></div>
+
+      <div class="relative">
+        <span
+          class="absolute w-6 h-6 bg-red-400 rounded-full animate-ping"
+        ></span>
+        <span class="relative w-6 h-6 bg-red-500 rounded-full block"></span>
+      </div>
+
+      <div class="w-16 h-16 bg-blue-400 animate-pulse rounded-full"></div>
+
+      <div class="w-80 p-4 border rounded-lg">
+        <div class="h-6 w-6 bg-gray-300 m-2 rounded-full animate-ping"></div>
+
+        <div class="h-40 bg-gray-300 rounded animate-pulse"></div>
+
+        <div class="mt-4 h-4 bg-gray-300 rounded animate-pulse"></div>
+
+        <div class="mt-2 h-4 w-2/3 bg-gray-300 rounded animate-pulse"></div>
+      </div>
+
+        <div class="w-16 h-16 bg-blue-300 animate-bounce text-white border-1 border-gray-900 rounded-full text-2xl text-center pt-4">^</div>
+    </div>
+  </body>
+</html>
