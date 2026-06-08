@@ -1,21 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Backgrounds & Shadows</title>
   </head>
   <body>
     <!-- Background Images -->
     <!-- https://tailwindcss.com/docs/background-image -->
+    <!-- <h1>1 . Background Images</h1> -->
+    <div
+      class="h-screen w-full bg-blue-500 bg-[url(https://images.unsplash.com/photo-1672872476232-da16b45c9001?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-no-repeat bg-center"
+    ></div>
 
     <!-- Shadows -->
     <!-- https://tailwindcss.com/docs/drop-shadow -->
     <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+    <div class="h-screen w-full pt-100">
+      <div
+        class="h-50 w-50 mx-auto bg-cyan-500 shadow-xl shadow-cyan-500/75"
+      ></div>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="w-[400px] mt-10 ml-4 p-3 shadow-md">Shadow Medium</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-lg">Shadow Large</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-xl">Shadow Extra Large</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-2xl">
+        Shadow 2x Extra Large
+      </div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-inner">Inner Shadow</div>
+      <!-- Shadow Colors -->
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-lg shadow-teal-300/70">
+        Colord Shadow
+      </div>
+    </div>
+    <br><hr><br>
 
     <!-- Gradients -->
     <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+     <div class=" h-40 my-10 p-40 bg-gradient-to-r from-teal-100 to-green-500 text-xl ">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima molestias ad nam, ipsum veritatis hic magni ducimus dicta doloremque tenetur ullam libero a commodi consequatur id pariatur et unde dolore!
+     </div>
+
+     <div class=" p-40 my-10 text-xl text-center bg-gradient-to-r from-cyan-500 via-blue-500 to-pink-400">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus non eaque, dignissimos delectus a sint ipsum error nulla ab deserunt omnis eum commodi autem natus corporis officia cumque at nemo optio veritatis ad illo explicabo iusto? Dolor beatae neque iste a ullam, assumenda vero omnis recusandae! Repellat ab temporibus accusantium saepe aperiam praesentium autem reprehenderit distinctio sunt, explicabo officiis minus commodi officia amet. Reprehenderit harum eaque optio, provident iure ut sit aliquid voluptatem vitae obcaecati. Repellat, deleniti illo repellendus ex magnam ad laborum vero facere excepturi. Placeat aliquid deserunt nulla accusamus nemo nobis natus assumenda magni deleniti. Laudantium, nemo?
+     </div>
   </body>
 </html>
