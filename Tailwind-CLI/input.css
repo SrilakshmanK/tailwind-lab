@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+a {
+  @apply text-green-500 underline;
+}
+
+.btn {
+  @apply bg-blue-500 text-white px-4 py-2 rounded-lg block m-10;
+}
