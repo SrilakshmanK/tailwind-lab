@@ -226,6 +226,9 @@
   .table {
     display: table;
   }
+  .w-56 {
+    width: calc(var(--spacing) * 56);
+  }
   .w-75 {
     width: calc(var(--spacing) * 75);
   }
